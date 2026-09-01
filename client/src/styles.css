@@ -67,3 +67,45 @@ button:disabled {
     background: #aaa;
     cursor: not-allowed;
 }
+
+.error {
+    color: #B00020;
+    font-weight: bold;
+}
+
+.success-toast {
+    background: #E6F4EA;
+    color: #1F6E43;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.empty-state {
+    border: 1px dashed #999;
+    padding: 16px;
+    color: #666;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.card {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+}
+
+.card:hover {
+    border-color: #4472C4;
+}
