@@ -34,6 +34,7 @@ export const api = {
   register: (payload) => request("/auth/register", { method: "POST", body: payload }),
   login: (payload) => request("/auth/login", { method: "POST", body: payload }),
 
+  searchRestaurants: (query) => request(`/restaurants${query ? `?query=${encodeURIComponent(query)}` : ""}`),
   getRestaurant: (id) => request(`/restaurants/${id}`),
   createRestaurant: (payload) => request("/restaurants", { method: "POST", body: payload, auth: true }),
   updateRestaurant: (id, payload) => request(`/restaurants/${id}`, { method: "PUT", body: payload, auth: true }),
