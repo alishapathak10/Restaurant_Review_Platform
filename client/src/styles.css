@@ -35,3 +35,35 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.page {
+    max-width: 700px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #4472C4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
