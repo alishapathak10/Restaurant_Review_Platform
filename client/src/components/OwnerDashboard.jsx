@@ -1,0 +1,5 @@
+export default function OwnerDashboard() {
+    return (
+        <div>Owner Dashboard page</div>
+    )
+}
