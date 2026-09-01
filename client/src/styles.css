@@ -109,3 +109,53 @@ button:disabled {
 .card:hover {
     border-color: #4472C4;
 }
+
+.review-form {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 16px 0;
+    background: white;
+}
+
+.star-input {
+    font-size: 22px;
+}
+
+.star {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.star.filled {
+    color: #f5b301;
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+}
+
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.owner-response {
+    background: #f0f4fa;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #4472C4;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 10px;
+}
