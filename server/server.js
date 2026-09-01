@@ -4,6 +4,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 const authRoutes = require("./routes/auth");
+const restaurantRoutes = require("./routes/restaurants");
+const reviewRoutes = require("./routes/reviews");
 
 const app = express();
 app.use(cors());
@@ -12,6 +14,8 @@ app.use(express.json());
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 
 app.use("/api/auth", authRoutes);
+app.use("/api/restaurants", restaurantRoutes);
+app.use("/api/restaurants", reviewRoutes);
 
 const PORT = process.env.PORT || 5000;
 
